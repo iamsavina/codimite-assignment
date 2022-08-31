@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#loggedInAs{
+    display:inline-block;
+}
+
+.signOutBtn{
+    float:right;
+}
+
+
+.todo-container{
+    max-width: 500px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    padding: 30px;
+}
+
+ul.tasksList {
+    margin-left:0;
+    padding-left:0;
+}
+
+ul.tasksList li{
+    /* margin-left:0; */
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ul.tasksList li button{
+    float:right;
+}
