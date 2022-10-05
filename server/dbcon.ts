@@ -1,9 +1,9 @@
 //GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
 //ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'example';
 
-import mysql from 'mysql2/promise';
+import {createPool} from 'mysql2/promise';
 
-const dbCon = mysql.createPool({
+const dbCon = createPool({
         host:'localhost',
         user:'root',
         password:'example1234',

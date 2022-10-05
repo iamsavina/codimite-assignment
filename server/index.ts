@@ -1,4 +1,5 @@
-import express, { Request, Response } from 'express'
+import { Request, Response } from 'express'
+import * as express from 'express';
 import dbCon from './dbcon'
 import log from './logger'
 
@@ -19,7 +20,7 @@ const startTheServer = async () => {
         log.info("Connected to the database")
         app.listen(port, () => log.info(`Sever running on localhost:${port}`))
 
-    }catch(e: any){//Need to add proper generic
+    }catch(e: any){//TODO: Need to add proper generic
         if(e.code === 'ECONNREFUSED'){
             log.fatal("Error connecting to database")
             log.fatal(e)
