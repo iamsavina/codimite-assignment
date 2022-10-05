@@ -1,4 +1,4 @@
-const baseUrl = "http://127.0.0.1:8000/api"
+const baseUrl = "http://ec2-54-157-183-111.compute-1.amazonaws.com/api"
 
 const newTaskInput = document.getElementById("newTask")
 const addBtn = document.getElementById("addBtn")
